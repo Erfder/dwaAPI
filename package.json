@@ -9,6 +9,12 @@
   "author": "Chase",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.15.0",
     "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "expect": "^1.15.2",
+    "mocha": "^2.4.5",
+    "supertest": "^1.2.0"
   }
 }
