@@ -26,4 +26,12 @@ describe('API', function(){
 		.expect('Content-Type', /json/)
 		.expect(200, {healthy: 'true'}, done);
 	});
+	it('/user/id should return user object with id', function testHealth(done){
+		var fakeid = 374
+		request(server)
+		.get('/api/user/' + fakeid)
+		.set('Accept','application/json')
+		.expect('Content-Type', /json/)
+		.expect(200, {user: {id: 374}}, done);
+	});
 });
